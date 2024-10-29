@@ -5,9 +5,12 @@ import { BrowserRouter , Route,Routes} from 'react-router-dom';
 import Todo from './Todo';
 import Practice from './Practice';
 import Home from './Components/Home';
+import { TopNav } from './Components/Top-Navbar/TopNav';
 
 function App() {
   return (
+    <>
+    <TopNav/>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -17,6 +20,7 @@ function App() {
       {/* <Route path="/" element={<Todo/>} /> */}
     </Routes>
   </BrowserRouter>
+  </>
   );
 }
 
